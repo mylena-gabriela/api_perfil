@@ -9,3 +9,4 @@ from perfil.contas.serializers import ContasSerializer
 class ContasViewSet(viewsets.ModelViewSet):
     queryset = Conta.objects.all()
     serializer_class = ContasSerializer
+    http_method_names = ['get', 'post', 'put', 'delete',]
